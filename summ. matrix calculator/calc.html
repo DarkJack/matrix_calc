@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calcmath</title>
+    <style>
+    
+        input{
+            height: 50px;
+            width: 70px;
+           
+        }
+        
+    .matchone{
+    display: grid;
+    grid-template-columns: repeat(2,80px);}
+        
+    .matchtwo{
+    display: grid;
+    grid-template-columns: repeat(2,80px);
+    margin-left: 170px;
+    margin-top: -112px;}
+    .pen{
+        display: grid;
+        grid-template-columns: repeat(2,80px);
+        background-color: aliceblue;
+        width: 100px;
+        padding: 5px;
+        margin-top: -119px;
+    margin-left: 347px;
+        }
+        button{
+        margin-top: 10px;
+    background-color: aliceblue;
+    font-family: segoe ui;
+    border: 1px solid cadetblue;
+        }
+    
+    </style>
+</head>
+<body>
+   
+   
+   <div class="calc">
+   
+   <div class="matchone">
+   <input type='number' id='inp' placeholder="1" required>
+   <input type='number' id='inp1'  placeholder="2" required>
+   <input type='number' id='inp2'  placeholder="3">
+   <input type='number' id='inp3'  placeholder="4">
+   </div>
+   
+   
+   
+   <div class='matchtwo'>
+   <input type='number' id='inp4' placeholder="5">
+   <input type='number' id='inp5'  placeholder="6">
+   <input type='number' id='inp6'  placeholder="7">
+   <input type='number' id='inp7'  placeholder="8">
+    </div>
+       
+    </div>
+   
+   
+   <button id='summcalc' onclick="calc()">summ</button>
+   <button id='subtraction' onclick="subtr()">subtraction</button>
+
+   <div class='pen'>
+   <p id='one'></p>
+   <p id='two'></p>
+   <p id='three'></p>
+   <p id='four'></p>
+   </div>
+   
+   
+   
+    <script>
+    
+        
+        
+        function calc() {
+        let onenum = document.getElementById("inp").value
+        let twonum = document.getElementById("inp1").value
+        let threenum = document.getElementById("inp2").value
+        let fournum = document.getElementById("inp3").value
+        let fivenum = document.getElementById("inp4").value
+        let sixnum = document.getElementById("inp5").value
+        let sevennum = document.getElementById("inp6").value
+        let eightnum = document.getElementById("inp7").value
+       
+    
+        let sum1 = parseInt(onenum) + parseInt(fivenum) 
+        console.log(sum1)
+            
+        let sum2 = parseInt(twonum) + parseInt(sixnum) 
+        console.log(sum2) 
+            
+        let sum3 = parseInt(threenum) + parseInt(sevennum) 
+        console.log(sum3)
+            
+        let sum4 = parseInt(fournum) + parseInt(eightnum) 
+        console.log(sum4)   
+        
+       
+        let pone = document.getElementById('one').innerHTML = sum1
+        let ptwo = document.getElementById('two').innerHTML = sum2
+        let pthree = document.getElementById('three').innerHTML = sum3
+        let pfour = document.getElementById('four').innerHTML = sum4     
+       }
+    
+        
+        function subtr() {
+        let onenum = document.getElementById("inp").value
+        let twonum = document.getElementById("inp1").value
+        let threenum = document.getElementById("inp2").value
+        let fournum = document.getElementById("inp3").value
+        let fivenum = document.getElementById("inp4").value
+        let sixnum = document.getElementById("inp5").value
+        let sevennum = document.getElementById("inp6").value
+        let eightnum = document.getElementById("inp7").value
+       
+    
+        let subtr1 = parseInt(onenum) - parseInt(fivenum) 
+        console.log(subtr1)
+            
+        let subtr2 = parseInt(twonum) - parseInt(sixnum) 
+        console.log(subtr2) 
+            
+        let subtr3 = parseInt(threenum) - parseInt(sevennum) 
+        console.log(subtr3)
+            
+        let subtr4 = parseInt(fournum) - parseInt(eightnum) 
+        console.log(subtr4)   
+        
+       
+        let pone = document.getElementById('one').innerHTML = subtr1
+        let ptwo = document.getElementById('two').innerHTML = subtr2
+        let pthree = document.getElementById('three').innerHTML = subtr3
+        let pfour = document.getElementById('four').innerHTML = subtr4 
+        }
+        
+        
+    </script>
+</body>
+</html>
